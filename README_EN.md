@@ -1,7 +1,7 @@
 # dm7617
-fm synth inspired by YM2612 chip, developed in [pure data](https://github.com/pure-data/pure-data) and [camomile](https://github.com/pierreguillot/Camomile)
-<br><br>
 [leer en español](https://github.com/teaecetyrannis/dm7617/blob/main/README.md)
+<br><br>
+fm synth inspired by YM2612 chip, developed in [pure data](https://github.com/pure-data/pure-data) and [camomile](https://github.com/pierreguillot/Camomile)
 
 ## installation
 download dm7617.zip file from the [last release](https://github.com/teaecetyrannis/dm7617/releases/tag/v1.0) and extract on the folder where vst3 plugins are found (to run with pd just run the dm7617.pd patch)
