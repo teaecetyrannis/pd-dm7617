@@ -1,7 +1,7 @@
 # dm7617
-sintetizador FM inspirado en el chip YM2612, desarrollado en [pure data](https://github.com/pure-data/pure-data) y [camomile](https://github.com/pierreguillot/Camomile)
-<br><br>
 [read in english](https://github.com/teaecetyrannis/dm7617/blob/main/README_EN.md)
+<br><br>
+sintetizador FM inspirado en el chip YM2612, desarrollado en [pure data](https://github.com/pure-data/pure-data) y [camomile](https://github.com/pierreguillot/Camomile)
 
 ## instalación
 descargar el archivo dm7617.zip de la [última release](https://github.com/teaecetyrannis/dm7617/releases/tag/v1.0) y extraerlo en la carpeta donde se encuentren los plugins vst3 (para correrlo en pd basta con ejecutar el parche dm7617.pd)
