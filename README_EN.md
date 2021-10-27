@@ -22,7 +22,9 @@ the synth features:
  3. eight algorithms identical to those of the YM2612
  4. controls for switching between monophonic and polyphonic, **legato**, voice-**stealing** and behaviour of pitch **bend** (*global* applies bending to all active voices of the polyphony and *last* applies it only to the newest voice)
  
-	 WARNING: in monophonic mode **bend** should be set to *global* and in polyphonic mode **legato** should be turned off, otherwise some unexpected behaviors may arise (known bugs that i don't know how to fix yet)
+WARNING:
+- in monophonic mode **bend** should be set to *global*, otherwise pitch bend may have no effect
+- in polyphonic mode **legato** should be turned off, otherwise some voices may not sound at all
 
 ## credits
 - [pure data](https://github.com/pure-data/pure-data) by miller puckette y many others
