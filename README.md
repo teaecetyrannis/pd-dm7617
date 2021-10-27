@@ -11,18 +11,18 @@ el sintetizador cuenta con:
 
  1. cuatro operadores, cada uno con control de:
 	 - ganancia (0-100%)
-	 - ataque (ms), decay (ms), sustain (0-100%) y release (ms)
+	 - ataque (*ms*), decay (*ms*), sustain (*0-100%*) y release (*ms*)
 	 - multiplicador de la frecuencia fundamental
-	 - afinación (cents)
-	 - cantidad de la lfo que se le es ruteada (0-100%)
+	 - afinación (*cents*)
+	 - cantidad de la lfo que se le es ruteada (*0-100%*)
 
 	a su vez el operador 1 puede "automodular" con una copia idéntica de sí mismo (op1_self), que cuenta con su propio control de ganancia y cantidad de lfo
 	
- 2. una lfo con control de ganancia y frecuencia (hz)
+ 2. una lfo con control de ganancia y frecuencia (*hz*)
  3. ocho algoritmos idénticos a los del YM2612
- 4. controles para cambiar entre monofónico y polifónico, legato, voice-stealing y comportamiento del pitch bend (*global* aplica el bend a todas las voces de la polifonía y *last* aplica el bend sólo a la última voz activada)
+ 4. controles para cambiar entre monofónico y polifónico, **legato**, voice-**stealing** y comportamiento del pitch **bend** (*global* aplica el bend a todas las voces de la polifonía y *last* aplica el bend sólo a la última voz activada)
  
-	 CUIDADO: en modo monofónico *bend* debe estar en *global* y en modo polifónico *legato* debe estar apagado, de lo contrario pueden surgir comportamientos inesperados (errores conocidos que aún no supe arreglar)
+	 CUIDADO: en modo monofónico **bend** debe estar en *global* y en modo polifónico **legato** debe estar apagado, de lo contrario pueden surgir comportamientos inesperados (errores conocidos que aún no supe arreglar)
 
 ## créditos
 - [pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
