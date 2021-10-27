@@ -22,7 +22,9 @@ el sintetizador cuenta con:
  3. ocho algoritmos idénticos a los del YM2612
  4. controles para cambiar entre monofónico y polifónico, **legato**, voice-**stealing** y comportamiento del pitch **bend** (*global* aplica el bend a todas las voces de la polifonía y *last* aplica el bend sólo a la última voz activada)
  
-	 CUIDADO: en modo monofónico **bend** debe estar en *global* y en modo polifónico **legato** debe estar apagado, de lo contrario pueden surgir comportamientos inesperados (errores conocidos que aún no supe arreglar)
+CUIDADO:
+- en modo monofónico **bend** debe estar en *global*, de lo contrario puede que el pitch bend no haga efecto
+- en modo polifónico **legato** debe estar apagado, de lo contrario puede que algunas voces no suenen
 
 ## créditos
 - [pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
