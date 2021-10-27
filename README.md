@@ -8,7 +8,7 @@ descargar el archivo dm7617.zip de la [última release](https://github.com/teaec
 el sintetizador cuenta con:
 
  1. cuatro operadores, cada uno con control de:
-	  - ganancia (0-100%)
+	 - ganancia (0-100%)
 	 - ataque (ms), decay (ms), sustain (0-100%) y release (ms)
 	 - multiplicador de la frecuencia fundamental
 	 - afinación (cents)
@@ -23,5 +23,5 @@ el sintetizador cuenta con:
 	 CUIDADO: en modo monofónico *bend* debe estar en *global* y en modo polifónico *legato* debe estar apagado, de lo contrario pueden surgir comportamientos inesperados (errores conocidos que aún no supe arreglar)
 
 ## créditos
-[pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
-[camomile](https://github.com/pierreguillot/Camomile) por pierre guillot
+- [pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
+- [camomile](https://github.com/pierreguillot/Camomile) por pierre guillot
