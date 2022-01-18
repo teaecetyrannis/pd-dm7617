@@ -1,10 +1,13 @@
 # dm7617
-[read in english](https://github.com/teaecetyrannis/dm7617/blob/main/README_EN.md)
+[read in english](https://github.com/teaecetyrannis/pd-dm7617/blob/main/README_EN.md)
 <br><br>
-sintetizador FM inspirado en el chip YM2612, desarrollado en [pure data](https://github.com/pure-data/pure-data) y [camomile](https://github.com/pierreguillot/Camomile)
+sintetizador FM inspirado en el chip YM2612, desarrollado en [pure data](https://github.com/pure-data/pure-data)
+
 
 ## instalación
-descargar el archivo dm7617.zip de la [última release](https://github.com/teaecetyrannis/dm7617/releases/tag/v1.0) y extraerlo en la carpeta donde se encuentren los plugins vst3 (para correrlo en pd basta con descargar el source code y ejecutar el parche dm7617.pd)
+descargar el archivo dm7617.zip de la [última release](https://github.com/teaecetyrannis/pd-dm7617/releases), extraer y agregar la carpeta contenedora al path de pure data, luego se puede iniciar desde cualquier parche creando el objeto `[dm7617~]`
+<br><br>también depende de la abstracción [adsr](https://github.com/teaecetyrannis/pd-adsr) y el objeto `[selector~]` de la librería [cyclone](https://github.com/porres/pd-cyclone), por lo que necesariamente deberán instalarse también
+
 
 ## funcionamiento
 el sintetizador cuenta con:
@@ -26,6 +29,11 @@ CUIDADO:
 - en modo monofónico **bend** debe estar en *global*, de lo contrario puede que el pitch bend no haga efecto
 - en modo polifónico **legato** debe estar apagado, de lo contrario puede que algunas voces no suenen
 
+
+## documentación, cambiar los parámetros dinámicamente y guardar el estado actual del sintetizador
+en el subparche `[pd help]` dentro de dm7617~.pd se encuentra (en inglés) toda esta misma información y además se detallan sus inlets y outlets y cómo setear todos los parámetros desde fuera mediante mensajes, permitiendo un control completamente dinámico del sintetizador sin hacer uso de la interfaz
+<br>gracias a esto también es posible recordar enteramente el estado del sintetizador: sólo es necesario un muy extenso mensaje que incluya todos los valores actuales para cada parámetro... por suerte esta función ya está incorporada y basta con conectar un mensaje (no es necesario que esté vacío, ya que su contenido será reemplazado) a la tercera outlet y luego enviar un mensaje `[state(` a la segunda inlet, esto escribirá en el mensaje todos los parámetros y rutas de archivos
+	
+
 ## créditos
-- [pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
-- [camomile](https://github.com/pierreguillot/Camomile) por pierre guillot
+[pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más
