@@ -1,5 +1,5 @@
 # dm7617
-Sintetizador FM inspirado en el chip YM2612, desarrollado en [pure data](https://github.com/pure-data/pure-data).
+Sintetizador FM inspirado en el chip YM2612, desarrollado en [Pure Data](https://github.com/pure-data/pure-data).
 
 
 ## instalación
@@ -12,4 +12,4 @@ En el subparche `[pd help]` dentro de dm7617~.pd se encuentra toda la informaci�
 	
 
 ## créditos
-[pure data](https://github.com/pure-data/pure-data) por miller puckette y muchxs más.
+[Pure Data](https://github.com/pure-data/pure-data) por Miller Puckette y muchxs más.
