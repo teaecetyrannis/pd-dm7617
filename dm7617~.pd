@@ -126,7 +126,7 @@ y anticlick;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
 #X connect 9 0 6 0;
-#X restore 527 249 pd adsr;
+#X restore 541 249 pd adsr;
 #X obj 16 87 cnv 15 428 247 empty \$0-text empty 20 12 0 14 #fcfcfc
 #b0b0b0 0;
 #X obj 406 273 vsl 10 53 -100 0 0 0 \$0-out \$0-out-r out: 0 -12 0
@@ -221,7 +221,7 @@ produzcan clicks;
 #X connect 10 0 5 0;
 #X connect 11 0 4 0;
 #X connect 12 0 13 0;
-#X restore 636 249 pd fine;
+#X restore 650 249 pd fine;
 #N canvas 712 43 643 574 freq 0;
 #X msg 12 80 op1 \$1;
 #X msg 68 80 op2 \$1;
@@ -248,7 +248,7 @@ produzcan clicks;
 #X connect 8 0 1 0;
 #X connect 9 0 0 0;
 #X connect 11 0 12 0;
-#X restore 694 249 pd freq;
+#X restore 708 249 pd freq;
 #N canvas -8 -8 1366 685 gain 0;
 #X msg 341 99 op2 \$1;
 #X msg 446 99 op3 \$1;
@@ -290,7 +290,7 @@ produzcan clicks;
 #X connect 17 0 11 0;
 #X connect 18 0 4 0;
 #X connect 19 0 20 0;
-#X restore 752 249 pd gain;
+#X restore 766 249 pd gain;
 #N canvas -8 -8 1366 685 midi-input 0;
 #X obj 93 400 outlet;
 #X obj 93 169 - 1;
@@ -496,7 +496,7 @@ de cada operador;
 #X connect 40 0 22 0;
 #X connect 41 0 23 0;
 #X connect 42 0 37 0;
-#X restore 810 249 pd lfo-per-operator;
+#X restore 824 249 pd lfo-per-operator;
 #N canvas -8 -8 1366 685 alg-visualization 0;
 #X obj 12 41 sel 0 1 2 3 4 5 6 7;
 #N canvas -8 -8 1366 685 alg0 0;
@@ -2098,7 +2098,7 @@ op1_self: 0 -9 0 10 #fc80c0 #fcfcfc #8080fc 0 1;
 #X obj 12 41 list prepend alg;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
-#X restore 585 249 pd alg;
+#X restore 599 249 pd alg;
 #X obj 485 80 inlet;
 #X obj 486 414 outlet~;
 #X obj 600 80 inlet;
@@ -2779,7 +2779,7 @@ empty 0 -8 0 10 #fc80c0 #fcfcfc #8080fc 0 256;
 #X obj 624 126 cnv 15 499 105 empty empty empty 20 12 0 14 #c4fcfc
 #404040 0;
 #X msg 634 142 set foo;
-#X obj 624 484 cnv 15 441 88 empty empty empty 20 12 0 14 #fcc4c4 #404040
+#X obj 624 428 cnv 15 441 88 empty empty empty 20 12 0 14 #fcc4c4 #404040
 0;
 #X text 621 102 OUTLET 1:;
 #X msg 48 183 opN gain \$1;
@@ -2832,10 +2832,10 @@ correctamente formateados para ser enviados de vuelta a la abstracción
 la abstracción reciba el mensaje [state(] \, se guardará el estado
 actual de la abstracción (tener en cuenta que el mensaje se vaciará
 antes de escribir en él);
-#X text 623 460 CUIDADO:;
-#X text 631 493 -en modo monofónico \, bendMode debe ser global \,
+#X text 623 404 CUIDADO:;
+#X text 631 437 -en modo monofónico \, bendMode debe ser global \,
 de lo contrario es posible que no tenga ningún efecto;
-#X text 631 532 -en modo polifónico el legato debe apagarse \, de
+#X text 631 476 -en modo polifónico el legato debe apagarse \, de
 lo contrario algunas voces pueden no sonar en absoluto;
 #X text 115 911 escribir un mensaje con el estado actual de la abstracción
 ;
@@ -2851,15 +2851,12 @@ semitonos (por defecto 2);
 ;
 #X text 144 726 usar o no usar anticlick (distinto de cero y 0 respectivamente)
 (por defecto 0) (consultar objeto adsr~);
-#X obj 623 311 cnv 15 441 119 empty empty empty 20 12 0 14 #fcc4c4
-#404040 0;
+#X obj 623 311 cnv 15 385 63 empty empty empty 20 12 0 14 #fcc4c4 #404040
+0;
 #X text 622 287 DEPENDENCIAS:;
 #X text 630 320 -para que la abstracción funcione debe instalarse
 la abstracción [adsr~] (https://github.com/teaecetyrannis/pd-adsr)
-y también se requiere del objeto [selector~] que puede encontrarse
-en la librería cyclone (https://github.com/porres/pd-cyclone) que
-puede conseguirse fácilmente mediante deken (plugin incluído en pd
-para descargar externals);
+;
 #X connect 2 0 3 0;
 #X connect 3 0 63 0;
 #X connect 4 0 5 0;
@@ -2907,7 +2904,7 @@ para descargar externals);
 #X connect 10 0 8 0;
 #X connect 10 1 9 0;
 #X connect 12 0 11 0;
-#X restore 952 249 pd switch;
+#X restore 966 249 pd switch;
 #X f 11;
 #X text 426 11 probablemente el parche más feo del proyecto \, es
 la lógia detrás del gráfico del ruteo del algoritmo seleccionado
@@ -2963,8 +2960,8 @@ en https://www.smspower.org/maxim/Documents/YM2612 \; \; dylan martin
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
-#X restore 636 298 pd targetall;
-#X obj 485 327 clone dm7617-voice2~ 16;
+#X restore 650 298 pd targetall;
+#X obj 485 327 clone ./dm7617-voice~ 16;
 #X connect 0 0 36 0;
 #X connect 1 0 117 0;
 #X connect 24 0 0 1;
