@@ -5,7 +5,7 @@ Sintetizador FM inspirado en el chip YM2612, desarrollado en [Pure Data](https:/
 ## instalación
 Descargar el archivo dm7617.zip de la [última release](https://github.com/teaecetyrannis/pd-dm7617/releases), extraer y agregar la carpeta contenedora al path de pure data. Ya se puede iniciar desde cualquier parche creando el objeto `[dm7617~]`.  
   
-También depende del objeto [`[adsr~]`](https://github.com/teaecetyrannis/pd-adsr), y del objeto `[selector~]` de la librería [cyclone](https://github.com/porres/pd-cyclone), por lo que necesariamente deberán instalarse también.
+Depende del objeto [`[adsr~]`](https://github.com/teaecetyrannis/pd-adsr), por lo que también deberá instalarse.
 
 
 ## documentación
