@@ -1,4 +1,4 @@
-# dm7617
+# dm7617~
 Sintetizador FM inspirado en el chip YM2612, desarrollado en [Pure Data](https://github.com/pure-data/pure-data).
 
 
